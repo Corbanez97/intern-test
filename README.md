@@ -1,6 +1,4 @@
-# Intercientifica - Python intern technical test
-
-A ~4 hour, hands-on test that goes from Python basics to a small FastAPI service, on synthetic lab data (96-well plates, patient lists, reader measurements).
+# Python intern technical test
 
 **Start here: [`notebooks/intern_test.ipynb`](notebooks/intern_test.ipynb)** - it contains the rules, the time guide and Parts 1-5. Part 6 is in [`DESIGN_ANSWER.md`](DESIGN_ANSWER.md); fill [`AI_LOG.md`](AI_LOG.md) at the end.
 
