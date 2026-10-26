@@ -1,0 +1,17 @@
+# patient list exported by the LIS - one "sample_id, well" per line
+# lines starting with # are comments
+PAT_001, C2
+PAT_002,D2
+
+  pat_003 , e3
+PAT_004,F3
+PAT_005,f3
+PAT_006,I1
+PAT_007,A13
+PAT_008
+,B4
+PAT_010,C4,extra
+PAT_011,G4
+# controls below
+CTRL_NEG,H12
+PAT_012, a5

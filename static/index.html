@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plate viewer</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; }
+    /* TODO: style the 8x12 grid (CSS grid is a good fit) and the POS / NEG / INVALID colours */
+  </style>
+</head>
+<body>
+  <h1>Plate viewer</h1>
+
+  <form id="form">
+    <label>Run id <input id="run" type="number" min="1" value="1"></label>
+    <label>Analyte <select id="analyte"></select></label>
+    <button>Load</button>
+  </form>
+  <p id="status"></p>
+  <div id="plate"></div>
+
+  <script>
+    // TODO:
+    //  1. fetch(`/runs/${id}/results`) and handle 404 / 409 with a readable message in #status
+    //  2. fill the <select> with the analytes found in the response
+    //  3. draw an 8 (rows A-H) x 12 (cols 1-12) grid into #plate; colour each well by its call
+    //     (POS / NEG / INVALID) for the chosen analyte and show sample_id + net_mfi on hover (title attribute)
+    //  4. show run_valid and the cutoff somewhere visible
+    document.getElementById("form").addEventListener("submit", (e) => {
+      e.preventDefault();
+    });
+  </script>
+</body>
+</html>
